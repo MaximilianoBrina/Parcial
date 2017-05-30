@@ -13,7 +13,7 @@ def torneo_liga(partidos): #procesa resultados de los partidos del torneo
         return ""
 
     #procesar las tuplas
-    for i in range (len(partidos)):
+    for i in range (len(partidos)): #Opcion=poner una validacion de que i sea efectivamente un int y no un str
         #empate
         if partidos[i][1] == partidos[i][3]:
             torneo[partidos[i][0]] = 1
@@ -40,7 +40,7 @@ def torneo_liga(partidos): #procesa resultados de los partidos del torneo
     return ganador_torneo(torneo)
 
 
-
+"""
 def ejercicio4(var1):
     return torneo_liga(var1)
 
@@ -58,3 +58,4 @@ print(ejercicio4(campeonato)) # a  b  c (cualquiera de las 3)
 
 campeonato = [("a",1,"b",-2),("a",1,"c",1),("c",1,"b",1),("d",1,"a",9)]
 print(ejercicio4(campeonato)) # a
+"""
